@@ -1,0 +1,195 @@
+
+*{
+    font-family: 'Poppins',sans-serif;
+}
+
+#logindiv {
+    width: 70%;
+    height: 100%;
+
+  
+    margin-top: 200px;
+    display: flex;
+    gap: 3%;
+
+}
+
+#logindiv div {
+    width: 50%;
+    height: 100%;
+
+}
+#log{
+    margin-left: 220px;
+}
+
+#logindiv input {
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    
+
+}
+
+.size {
+    font-size: 10px;
+
+}
+.size6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.size p{
+    width: 180%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 8px;
+
+}
+#bttn{
+    margin-top: 70px;
+}
+
+#bttn button {
+    width: 19em;
+    height: 2.7em;
+    background-color: black;
+    color: white;
+    margin-top: 13px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+#bttn button:hover ,#logbttn button:hover{
+    background-color: rgb(46, 46, 46);
+
+}
+
+#bttn button a{
+    color: white;
+    font-size: x-small;
+    text-decoration: none;
+    font-size: 10px;
+}
+#logbttn button a{
+    color: white;
+    font-size: x-small;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#logbttn button {
+  width: 19em;
+  height: 2.7em;
+    background-color: black;
+    color: white;
+   
+    margin-top: 45px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+ 
+}
+
+
+
+#inputEmail {
+    border: 0.01px solid gray;
+  
+    width: 130%;
+    height: 20px;
+}
+#inputPasswd {
+    border: 0.01px solid gray;
+  
+    width: 130%;
+    height: 30px;
+}
+
+@media only screen and (min-width:375px) and (max-width:768px){
+   
+    #logindiv {
+        width: 100%;
+        height: 100%;
+    margin-top: 200px;
+     
+    font-size: 40px;
+        display: flex;
+        gap: 2%;
+    
+    }
+    #log{
+     margin-left: 10%;
+    
+        
+    }
+  
+
+    #bttn button {
+        width: 10em;
+        height: 3em;
+        background-color: black;
+        color: white;
+        margin-top: 5px;
+    }
+    #logbttn button {
+        width: 10em;
+        height: 3em;
+          background-color: black;
+          color: white;
+         
+          margin-top: 45px;
+       
+      }
+      #bttn{
+        margin-top: 60px;
+    }
+    .size {
+        font-size: 30px;
+    
+    }
+    .size6{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .size p{
+        width: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+    
+    }
+    
+
+}
+@media only screen and (min-width:0px) and (max-width:844px){
+ #logindiv>#reg{
+    display: none;
+}
+.size p{
+    width: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+#inputEmail {
+    border: 0.01px solid gray;
+  
+    width: 200%;
+    height: 20px;
+}
+#inputPasswd {
+    border: 0.01px solid gray;
+  
+    width: 200%;
+    height: 30px;
+}
+
+
+}

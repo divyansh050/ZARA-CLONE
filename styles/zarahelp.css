@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu {
+    display: flex;
+
+    margin-top: 30px;
+
+    gap: 100px;
+
+    margin-left: 250px;
+}
+
+#menu div img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+#dis1 div img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+#dis2 div img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+#menu div p {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#dis1 {
+    margin-left: 240px;
+    margin-top: 20px;
+}
+#dis2 {
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+#imgp p {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#desc p {
+    font-size: 10px;
+
+    width: 400px;
+
+
+}
+
+
+#help {
+    font-size: x-small;
+    margin-left: 220px;
+    margin-top: 20px;
+}
+
+#shop {
+    margin-top: 180px;
+    margin-left: 200px;
+}
+
+#exchange {
+    margin-left: 250px;
+}
+
+#exchange div img {
+    width: 50px;
+}
+
+#exchange p {
+    font-size: x-small;
+    font-weight: bold;
+
+}
+
+#dis1 {
+    display: none;
+}
+
+#dis2 {
+    display: none;
+}
+
+#imgp {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

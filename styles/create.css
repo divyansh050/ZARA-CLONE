@@ -1,0 +1,233 @@
+* {
+   font-family: 'Poppins',sans-serif;
+ 
+ 
+  
+  
+ 
+}
+
+#logpage {
+    width: 60%;
+    height: 50%;
+  
+    margin-top: 120px;
+    margin-left: 250px;
+}
+
+#check {
+    display: flex;
+   gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    font-size: 12px;
+}
+
+#checkmarkp{
+    color: black;
+}
+
+/* #check div {
+    margin-left: 2px;
+    font-size: 10px;
+} */
+
+#checklast {
+    font-size: 10px;
+    
+}
+
+
+#fill {
+   
+    margin-top: 15px;
+}
+
+#fill input {
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 30px;
+    padding: 10px;
+
+}
+/* 
+#checkmark {
+    border-radius: 50px;
+} */
+
+#email {
+    border: 0.01px solid gray;
+    margin-top: 10px;
+    width: 40%;
+    height: 10px;
+}
+
+#password {
+    border: 0.01px solid gray;
+    margin-top: 10px;
+    width: 40%;
+    height: 10px;
+}
+
+#reapeatpassword {
+    width: 45%;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 0.01px solid gray;
+    
+}
+
+#name
+{
+    border: 0.01px solid gray;
+    margin-top: 10px;
+    width: 40%;
+    height: 10px;
+}
+#gst{
+    border: 0.01px solid gray;
+    margin-top: 10px;
+    width: 40%;
+    height: 10px;
+}
+#com{
+    width: 45%;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0.01px solid gray; 
+}
+
+#pin
+{
+    width: 45%;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 0.01px solid gray;
+    
+}
+
+#address {
+    border: 0.01px solid gray;
+    margin-top: 10px;
+    width: 40%;
+    height: 10px;
+}
+
+#optional {
+    width: 45%;
+    height: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 0.01px solid gray;
+   
+}
+
+#locality {
+    border: 0.01px solid gray;
+    border-radius: 3px;
+    width: 40%;
+    height: 10px;
+    margin-top: 10px;
+}
+
+#city {
+    width: 45%;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 0.01px solid rgb(94, 79, 79);
+
+}
+
+#state {
+    width: 40%;
+    height: 20px;
+    border: 0.5px solid gray;
+    margin-top: 20px;
+border-top: none;
+border-right: none;
+border-left: none;
+    color: grey;
+   
+}
+#stateR {
+    width: 12%;
+    height: 20px;
+    border: 0.5px solid gray;
+    margin-top: 20px;
+    margin-left: 15px;
+border-top: none;
+border-right: none;
+border-left: none;
+border-bottom: none;
+    color: grey;
+   
+}
+
+#tel {
+    width: 26%;
+    height: 10px;
+    /* margin-top: 10px; */
+    margin-left: 15px;
+    border: 0.01px solid gray;
+}
+
+#mobile {
+    width: 10%;
+    height: 10px;
+
+    border: 0.01px solid gray;
+}
+#bttn button {
+    width: 27em;
+  height: 2.7em;
+background-color: black;
+color: white;
+margin-top: 25px;
+
+}
+#bttn button a{
+color: white;
+text-decoration: none;
+font-size: 10px;
+}
+#companyfill{
+    display: none;
+}
+#fb{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+@media only screen and (min-width:375px) and (max-width:768px){
+    #logpage {
+        width: 100%;
+        height: 50%;
+      
+        margin-top: 120px;
+        margin-left: 22px;
+    }
+   
+    #check div {
+        margin-left: 2px;
+        font-size: 20px;
+    }
+    #fill {
+        margin-top: 40px;
+      
+    }
+    #fb{
+        font-size: 12px;
+        margin-top: 30px;
+    }
+    
+
+}
+
+

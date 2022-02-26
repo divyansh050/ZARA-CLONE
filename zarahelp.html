@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN / CREATE ACCOUNT - ZARA India - Official Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+      <link rel="stylesheet" href="./styles/zarahelp.css">
+      <link rel="stylesheet" href="./styles/header.css">
+      <link rel="stylesheet" href="./styles/footer.css">
+     
+</head>
+
+<body>
+    <div id="header"></div>
+    <div>
+        <h2 id="shop">PRODUCT</h2>
+        <p id="help" onclick="goTohelp()">HELP</p>
+        <div id="menu">
+            <div>
+
+                <div onclick="goToprofile()"><img
+                        src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-product-availability.svg?ts=1550654368093"
+                        alt=""></div>
+                <p>AVAILABITY</p>
+            </div>
+            <div>
+                <div onclick="goToorder()"><img
+                        src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-product-sizes.svg?ts=1550654368093"
+                        alt=""></div>
+                <p>SIZE</p>
+            </div>
+            <div>
+                <div><img
+                        src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-product-cares.svg?ts=1550654368093"
+                        alt=""></div>
+                <p>FEATURES AND CARES</p>
+            </div>
+            <div>
+                <div><img
+                        src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-product-retired.svg?ts=1550654368093"
+                        alt=""></div>
+                <p>WITHDRAWN ITEMS</p>
+            </div>
+
+        </div>
+
+        <div id="dis1">
+            <div id="imgp">
+                <img src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-product-availability.svg?ts=1550654368093"
+                    alt="">
+                <p>AVAILABITY</p>
+            </div>
+            <div id="desc">
+                <p>
+                    On Zara.com you can find new products every week, just like in our stores.
+                </p>
+                <p>
+                    If the item you want has sold out but it has the symbol comming soon , you can register your email
+                    address and we will let you know as soon as it becomes available, within 15 days of your
+                    registration. This process does not reserve the item.
+                </p>
+                <p>
+                    You may also view the stock on our website using our “Check in-store availability” option.
+                </p>
+            </div>
+
+        </div>
+        <div id="dis2">
+            <div id="imgp">
+                <img
+                        src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-product-sizes.svg?ts=1550654368093"
+                        alt="">
+                <p>SIZE</p>
+            </div>
+            <div id="desc">
+                <p>
+                    To help you find your size, we provide a tool, "Find My Size", that recommends the best size for you, using the details that you provide. If this option is not available for the item you are interested in, you can always consult our size guide.
+                </p>
+            
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
+<script src="./scripts/mainhelp.js"></script>
+
+<script type="module">
+  import { header } from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
+  </script>
