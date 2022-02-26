@@ -280,6 +280,29 @@ footer {
   color: grey;
 }
 
+#searchProd {
+  /* display: grid; */
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 0px 20px;
+}
+#searchProd > div {
+  margin-bottom: 2.8em;
+}
+#searchProd > div > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+}
+#searchProd > div > div >:nth-child(1):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#searchProd > div > img {
+  width: 100%;
+}
+
 
 
 
