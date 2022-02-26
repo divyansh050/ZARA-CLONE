@@ -105,5 +105,13 @@
     /* top: 26px; */
     margin-top: -71px;
     width: 40%;
+  }
 }
+
+#sortPrice{
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  margin-left: 1030px;
+  border: 1px solid black;
 }

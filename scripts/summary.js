@@ -3,7 +3,7 @@ let cartItem = JSON.parse(localStorage.getItem("cart"));
 appendUserDetails(userData, cartItem);
 
 function appendUserDetails(userData, cartItem) {
-  let data = userData[userData.length - 1];
+  let data = userData
   let leftContainer = document.getElementById("left");
   leftContainer.innerHTML = "";
 
@@ -16,10 +16,10 @@ function appendUserDetails(userData, cartItem) {
             <div class="name">
                 <p>${data.name}</p>
                 <p>${data.address}</p>
-                <p>${data.pin}</p>
+                <p>${data.pincode}</p>
                 <p>${data.state}</p>
-                <p>${data.stateR}</p>
-                <p>${data.tel}</p>
+                <p>${data.city}</p>
+                <p>${data.phone}</p>
             </div>
             <h4 style="margin-top: 60px;">PAYMENT</h4>
             <p><u>EDIT</u></p>`;
