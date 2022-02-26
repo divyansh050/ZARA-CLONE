@@ -48,7 +48,7 @@ async function loginUser(data) {
 
   localStorage.setItem("userName", JSON.stringify(name));
   localStorage.setItem("token", JSON.stringify(response.token));
-  localStorage.setItem("userDataBase", JSON.stringify(response.user));
+  // localStorage.setItem("userDataBase", JSON.stringify(response.user));
 
   if(cart.length){
     window.location.href = "shipping.html";
