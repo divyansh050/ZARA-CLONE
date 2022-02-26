@@ -9,9 +9,10 @@ async function initial() {
 
   let products = await res.json();
 
-  console.log("Products : ", products);
+  // console.log("Products : ", products);
   display(products);
 }
+
 
 function display(data) {
   let main = document.getElementById("main");
