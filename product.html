@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/product.css">
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="container">
+      <div class="left_side_content">
+        <h4>MATERIALS, CARE AND ORIGIN</h4>
+        <h3>MATERIALS</h3>
+        <p>
+          We work with monitoring programmes to ensure compliance with safety,
+          health and quality standards for our products.
+        </p>
+        <p>
+          The Green to Wear 2.0 standard aims to minimise the environmental
+          impact of textile manufacturing. To that end, we have developed
+          Inditex’s The List programme, which helps guarantee both that
+          production processes are
+        </p>
+        <p>View more</p>
+      </div>
+      <div class="image_div">
+        <!-- <img
+          src="https://static.zara.net/photos///2022/V/0/1/p/3427/408/800/23/w/563/3427408800_1_1_1.jpg?ts=1642502007031"
+          alt=""
+        /> -->
+      </div>
+      <div class="product_info_rightSide">
+        <!-- <div class="product_name">
+          <h2>CONTRAST PATCH JACKET</h2>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxF6EZhPKz6EhL_9Zf3-E3nn6y-aDwf2jDnmfQmBdTZc7TtSM5zshsfsEboujZ_JJOmg&usqp=CAU"
+            alt=""
+          />
+        </div>
+        <p>
+          Loose-fitting jacket with a ribbed collar. Long sleeves with elastic
+          cuffs. Hip welt pockets and an inside pocket. Contrast patch appliqués
+          on the front and back. Ribbed hem. Snap-button fastening on the front.
+        </p>
+        <p>₹ 6,990.00</p>
+        <p>MRP incl. of all taxes</p>
+         <hr> -->
+        <!-- <div class="sizes">
+          <p>M (UK M)</p>
+          <p>L (UK L)</p>
+          <p>XL (UK XL)</p>
+        </div>
+
+        <div class="sizeScale">
+          <p>FIND YOUR SIZE</p>
+          <p>SIZE GUIDE</p>
+        </div>
+        <button>ADD TO BAG</button>
+        <p>CHECK IN-STORE AVAILABILITY</p>
+        <p>DELIVERY, EXCHANGES AND RETURNS</p> -->
+      </div>
+
+    </div>
+    <div id="footer"></div>
+
+    <div id="popup" class="popup none">
+      <h1>CART</h1>
+      <h1 class="X" onclick="closepop()">X</h1>
+      <div id="popupmain">
+        <!-- <div class="flex">
+          <img src="https://static.zara.net/photos///2021/I/0/2/p/3057/775/615/2/w/173/3057775615_1_1_1.jpg?ts=1629390788843" alt="">
+          <div>name</div>
+          <div>price</div>
+        </div> -->
+      </div>
+
+      <a href="./shoppingBasket.html">
+        <button>GO TO BASKET</button>
+      </a>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+  import { header } from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
+
+</script>
+
+<script src="./scripts/product.js"></script>
