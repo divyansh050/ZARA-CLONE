@@ -1,0 +1,152 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;;
+}
+nav{
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    width: 210px;
+    margin-top: 10px;
+    margin-left: 8%;
+    margin-bottom: 10px;
+}
+#logo>a>img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#help{
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+#bag{
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#bag>p{
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#items{
+    margin-left: 100px;
+    width: 100ev;
+    height: 400px;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    margin-bottom: 200px;
+}
+#items>div{
+    width: 480px;
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+}
+#items>div>img{
+    width: 60%;
+    margin-right: 20px;
+}
+
+#items>div button{
+    padding:.2em .3em;
+    /* cursor: pointer; */
+    background-color: transparent;
+    border: none;
+    font-size: large;
+}
+
+.yellow{
+    background-color: #ffe800;
+    width: 90px;
+    padding: 5px;
+}
+.desc p,h5{
+    margin-bottom: 15px;
+}
+/* p{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 10px;
+} */
+#card>div{
+    display: flex;
+    margin-left: 69%;
+}
+#card{
+    background-color: white;
+    width: 99%;
+    height: 80px;
+    position: fixed;
+    bottom: 0%;
+}
+#card>div>button{
+    width: 240px;
+    background-color: black;
+    border: none;
+    color: white;
+    height: 40px;
+    margin: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#card>div>button:hover{
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+#price{
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px){
+
+    #card>div{
+        display: flex;
+        margin-left: 48%;
+    }
+    #help{
+        width: 15%;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 390px){
+    #items{
+        display: block;
+        margin-left: 10%;
+    }
+    #items>div{
+        margin-bottom: 40px;
+        width: 330px;
+    }
+    #card{
+        border-top: 2px solid black;
+        position: fixed;
+    }
+    #card>div{
+        margin-left: 10%;
+    }
+    #help{
+        width: 27%;
+        margin-right: 2%;
+    }
+}

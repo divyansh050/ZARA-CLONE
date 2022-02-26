@@ -1,0 +1,101 @@
+#boxes {
+  width: 84%;
+  margin: auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+#boxes > div {
+  width: 73%;
+  border: 1px solid rgb(211, 209, 209);
+  height: 120px;
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.5s linear;
+}
+
+#boxes > div:hover {
+
+  position: relative;
+  top: -10px;
+  border-bottom: 2px solid black;
+}
+
+.box:hover {
+  position: relative;
+  top: -10px;
+  border-bottom: 2px solid black;
+}
+#boxes > div > img {
+  /* border: 1px solid rgb(170, 168, 168); */
+  margin-top: 20px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.box > img {
+  /* border: 1px solid rgb(170, 168, 168); */
+  margin-top: 20px;
+  width: 50%;
+  margin-bottom: 20px;
+  transition: all 0.5s linear;
+}
+.box {
+  margin-top: 20px;
+  width: 10%;
+  height: 120px;
+  margin-left: 8%;
+  margin-bottom: 20px;
+  border: 1px solid rgb(211, 209, 209);
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  #boxes {
+    width: 70%;
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  #boxes > div {
+    width: 100%;
+    font-size: 12px;
+  }
+  .box {
+    width: 21.5%;
+    font-size: 12px;
+  }
+  #boxes > div > img {
+    margin-bottom: 10px;
+  }
+  .box > img {
+    margin-bottom: 10px;
+  }
+  #card > div {
+    display: flex;
+    margin-left: 48%;
+    margin-top: 8%;
+  }
+  #bottom > p {
+    font-size: 14;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 390px) {
+  #boxes {
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box {
+    width: 42%;
+  }
+  #card > div {
+    margin-left: 10%;
+    margin-top: 8%;
+  }
+  button {
+    width: 200px;
+    height: 45px;
+  }
+}

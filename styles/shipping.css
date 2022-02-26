@@ -1,0 +1,66 @@
+#cards>div{
+    position: fixed;
+    display: flex;
+    margin-left: 70%;
+}
+#store{
+    border-bottom: 1px solid rgb(202, 202, 202);
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#home{
+    border-bottom: 1px solid rgb(202, 202, 202);
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+input{
+    margin-right: 10px;
+    margin-left: 15px;
+}
+#home>div{
+    margin-left: 37px;
+}
+#home>p{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 37px;
+}
+@media only screen and (min-width:391px) and (max-width:768px){
+    #cards>div{
+        margin-left: 48%;
+        margin-top: 50%;
+        background-color: white;
+    }
+    #bottom{
+        margin-left: 9%;
+        width: 75%;
+    }
+    #bottom p{
+        font-size: 15px;
+    }
+    #help{
+        margin-left: 5%;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:390px){
+    #cards>div{
+        margin-left: 10%;
+        margin-top: 52%;
+        background-color: white;
+    }
+    button{
+        width: 200px;
+        height: 45px;
+    }
+    #bottom>h2{
+        font-size: 17px;
+        line-height: 28px;
+        margin-left: 0%;
+    }
+}

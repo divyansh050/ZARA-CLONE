@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process Order - Delivery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/shipping.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar"></nav>
+
+    <!-- body -->
+    <div id="bottom">
+      <h2>CHOOSE YOUR SHIPPING METHOD</h2>
+      <h3>IN-STORE PICK UP</h3>
+      <div id="store">
+        <p>
+          <input type="radio" name="delopt" />MONDAY 24, JANUARY - WEDNESDAY 26,
+          JANUARY
+        </p>
+        <p>FREE</p>
+      </div>
+      <h3>HOME DELIVERY</h3>
+      <div id="home">
+        <p>WEDNESDAY 26, JANUARY - MONDAY 31, JANUARY <span>290.00</span></p>
+        <input type="radio" name="delopt" />
+        <div>
+          <p style="color: rgb(170, 169, 169)">
+            TRANSPORT RESTRICTIONS MAY APPLY TO SOME AREAS
+          </p>
+          <p style="color: rgb(170, 169, 169)">
+            FREE SHIPPING FOR ORDERS OVER ₹ 2,990
+          </p>
+          <a href="" style="color: rgb(121, 120, 120)">DELIVERY TIME FRAMES</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cards">
+      <div>
+        <div id="price">TOTAL : <span>2,290.00</span></div>
+        <button onclick="window.location.href = 'payment.html' ">
+          CONTINUE
+        </button>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script type="module">
+  let total = JSON.parse(localStorage.getItem("total"));
+  document.getElementById("price").innerHTML = `TOTAL : <span>${total}</span>`;
+
+  import navbar from "./components/navbar.js";
+  let nav = document.getElementById("navbar");
+  nav.innerHTML = navbar();
+
+  import { footers } from "./components/footer.js";
+  let footer = document.getElementById("footer");
+  footer.innerHTML = footers();
+
+
+</script>
+
+<script src="./scripts/shipping.js"></script>

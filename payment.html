@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Order - Payment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/payment.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navbar"></nav>
+
+    <!-- body -->
+    <div id="bottom">
+        <h2>CHOOSE A PAYMENT METHOD</h2>
+        <p>Please note that only cards that use 3D Secure are accepted. Contact your bank to activate it or for further instructions.</p> 
+    </div>
+
+    <div id="boxes">
+        <div id="visa">
+            <img src="https://static.zara.net/static/images/payment/payment/icon-payment-visa.svg" alt="">
+            <p>VISA</p>
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/icon-payment-mastercard.svg" alt="">
+            <p>MASTERCARD</p>
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/icon-payment-amex_2.svg" alt="">
+            <p>AMERICAN EXPRESS</p>
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/ru-pay.svg" alt="">
+            <p>RUPAY</p>
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/net-banking.svg" alt="" style="width: 55%;">
+            <p>NETBANKING</p>
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/upi.svg" alt="">
+            <p>UNIFIED PAYMENTS INTERFACE</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://static.zara.net/static/images/payment/payment/co-djpen.svg" alt="">
+        <p>CASH ON DELIVERY</p>
+    </div>
+
+    <div class="box">
+        <img src="https://static.zara.net/static/images/payment/payment/in.svg" alt="">
+        <p>IN CARD</p>
+    </div>
+
+    <div id="card">
+        <div>
+            <div id="price">TOTAL :  <span>2,290.00</span></div>
+            <button onclick="window.location.href = 'cardPayment.html' ">CONTINUE</button>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>
+
+<script type="module">
+    let total = JSON.parse(localStorage.getItem('total'))
+document.getElementById('price').innerHTML = `TOTAL : <span>${total}</span>`
+
+    import navbar from "./components/navbar.js";
+    let nav = document.getElementById("navbar");
+    nav.innerHTML = navbar();
+
+    import { footers } from "./components/footer.js";
+    let footer = document.getElementById("footer");
+    footer.innerHTML = footers();
+
+    let visa = document.getElementById("visa")
+    visa.addEventListener("click",function(){
+        visa.style.border = "2px solid black";
+    })
+</script>
