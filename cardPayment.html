@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process Order - Payment using Card</title>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/cardPayment.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar"></nav>
+
+    <div id="bottom">
+      <h2>ENTER YOUR CARD DETAILS</h2>
+      <img
+        class="img"
+        src="https://static.zara.net/static/images/payment/payment/icon-payment-visa.svg"
+        alt=""
+      />
+      <form action="">
+        <input type="text" placeholder="CARD NUMBER" />
+        <input type="month" placeholder="MONTH" />
+        <input type="number" placeholder="YEAR" /><br />
+        <input type="text" placeholder="CARD HOLDER" />
+        <input type="text" placeholder="CVV2 SECURITY CODE" />
+      </form>
+    </div>
+
+    <div id="cards">
+      <div id="pr">
+        <div id="price">TOTAL : <span>2,290.00</span></div>
+        <button onclick="window.location.href = 'summary.html' ">
+          CONTINUE
+        </button>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script type="module">
+  let total = JSON.parse(localStorage.getItem("total"));
+  document.getElementById("price").innerHTML = `TOTAL : <span>${total}</span>`;
+
+  import navbar from "./components/navbar.js";
+  let nav = document.getElementById("navbar");
+  nav.innerHTML = navbar();
+
+  import { footers } from "./components/footer.js";
+  let footer = document.getElementById("footer");
+  footer.innerHTML = footers();
+</script>

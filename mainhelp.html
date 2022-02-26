@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/mainhelp.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div>
+      <h2 id="help">HELP</h2>
+      <div id="menu">
+        <div onclick="goTozarashop()">
+          <div>
+            <img
+              src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-bag.svg?ts=1550654368093"
+              alt=""
+            />
+          </div>
+          <p>SHOP AT ZARA.COM</p>
+        </div>
+        <div onclick="goToproduct()">
+          <div>
+            <img
+              src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-product.svg?ts=1550654368093"
+              alt=""
+            />
+          </div>
+          <p>PRODUCT</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-payment.svg?ts=1550654368093"
+              alt=""
+            />
+          </div>
+          <p>PAYMENT</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-shipping.svg?ts=1550654368093"
+              alt=""
+            />
+          </div>
+          <p>SHIPPING</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-returns.svg?ts=1550654368093"
+              alt=""
+            />
+          </div>
+
+          <p>EXCHANGE AND</p>
+          <p>RETURN</p>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-stores-and-company.svg?ts=1550654368093"
+              alt=""
+            />
+          </div>
+          <p>SHOP AND COMPANY</p>
+        </div>
+      </div>
+      <div id="exchange">
+        <div>
+          <img
+            src="https://static.zara.net/photos///mkt/misc/help/icons//icon-80-help-clothes-collection-info.svg?ts=1614071652367"
+            alt=""
+          />
+        </div>
+        <p>CLOTHES COLLECTION PROGRAM</p>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="./scripts/mainhelp.js"></script>
+
+<script type="module">
+  import { header } from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
+</script>
