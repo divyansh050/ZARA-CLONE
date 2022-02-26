@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/search.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <title>Search engine | ZARA</title>
+  </head>
+  <body>
+    <!-- header---: on one side  hamburgur section  and  right side logo and help,login,cart    -->
+    <header>
+      <!-- header left side --- HAMBURGER section  -->
+      <div id="hambuger">
+        <!-- HAMBURGER icon image  -->
+        <img
+          src="https://icon-library.com/images/menu-icon-png-3-lines/menu-icon-png-3-lines-16.jpg"
+          alt=""
+          id="hamburgerIcon"
+        />
+      </div>
+
+      <!-- header LOGO and LOGIN, CART section  -->
+      <div id="logohead">
+        <!-- ZARA LOGO image  -->
+        <a href="./index.html">
+            <img
+              src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png"
+              alt=""
+              id="zara_logo"
+            />
+        </a>
+
+        <!-- hearder LOGIN, HELP & CART  -->
+        <div id="ul">
+          <ul>
+            <!-- <a href="./login.html">
+                <li class="log-help">LOG IN</li>
+            </a> -->
+            <a href="./zarahelp.html">
+                <li class="log-help">HELP</li>
+            </a>
+            <a href="./shoppingBasket.html">
+                <li>CART</li>
+            </a>
+          </ul>
+       
+        </div>
+     
+      </div>
+    </header>
+
+    <!-- MAIN container below HEADER section  -->
+    <div id="container">
+      <div id="main">
+        <!-- search bar  -->
+        <input
+          type="text"
+          name=""
+          id="searchbar"
+          placeholder="ENTER SEARCH TERMS"
+        />
+
+        <!-- TREND products below Search bar  -->
+        <div id="trending_product">
+          <p>TRENDS</p>
+          <p onclick="shirts(event)">SHIRT MEN</p>
+          <p onclick="shoes(event)">SHOES</p>
+          <p onclick="womenAcc(event)">WOMEN ACCESSORIES</p>
+          <p onclick="womenjacket(event)">WOMEN JACKET</p>
+
+        </div>
+      </div>
+      
+    <!-- all products html  -->
+      <div id="shirt-products" class="none grid">
+    
+      </div>
+      <div id="shoes-products" class="none grid">
+
+      </div>
+      <div id="womenAccessories-products" class="none grid">
+
+      </div>
+      <div id="women-jacket" class="none grid">
+
+      </div>
+        <!-- ABOUT section below trending products  -->
+        <div id="footer_section">
+        <div id="about">
+          <!-- HEADINDS & CONTENT in about section  -->
+          <div class="about_info">
+            <h4>HELP</h4>
+            <p>SHOP AT ZARA.COM</p>
+            <p>PRODUCT</p>
+            <p>PAYMENT</p>
+            <p>SHIPPING</p>
+            <p>EXCHANGES AND RETURNS</p>
+            <p>SHOPS AND COMPANY</p>
+            <p>CLOTHES COLLECTION PROGRAMME</p>
+            <p>MY ACCOUNT</p>
+          </div>
+          <div class="about_info">
+            <h4>FOLLOW US</h4>
+            <p>NEWSLETTER</p>
+            <p>TIKTOK</p>
+            <p>INSTAGRAM</p>
+            <p>FACEBOOK</p>
+            <p>TWITTER</p>
+            <p>PINTEREST</p>
+            <p>YOUTUBE</p>
+          </div>
+          <div class="about_info">
+            <h4>COMPANY</h4>
+            <p>ABOUT US</p>
+            <p>OFFICES</p>
+            <p>STORES</p>
+            <p>WORK WITH US</p>
+          </div>
+          <div class="about_info">
+            <h4>POLICIES</h4>
+            <p>PRIVACY POLICY</p>
+            <p>PURCHASE CONDITIONS</p>
+            <p>COOKIES SETTINGS</p>
+          </div>
+        </div>
+        <footer>
+          <div id="footer_left_box">
+            <p>INDIA</p>
+
+            <p>NAME AND ADDRESS OF THE MANUFACTURER:</p>
+            <p>INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.)</p>
+            <p>
+              AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A
+              CORUÑA), SPAIN
+            </p>
+          </div>
+          <div id="footer_right_box">
+            <p>ENGLISH</p>
+            <p>&copy; ALL RIGHTS RESERVED</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/search.js"></script>
