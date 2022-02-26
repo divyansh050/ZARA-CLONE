@@ -1,6 +1,30 @@
-let userData = JSON.parse(localStorage.getItem("userDataBase"));
+
+let token = JSON.parse(localStorage.getItem("token"));
 let cartItem = JSON.parse(localStorage.getItem("cart"));
-appendUserDetails(userData, cartItem);
+
+userToken(token);
+
+async function userToken(token) {
+  try{
+
+    let res = await fetch("https://zara-server.herokuapp.com/verify/user", {
+      method: "GET",
+      headers: {
+        
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+   let response = await res.json();
+    
+    appendUserDetails(response, cartItem);
+  }catch(e){
+   
+    console.log(e);
+  }
+}
+
 
 function appendUserDetails(userData, cartItem) {
   let data = userData
