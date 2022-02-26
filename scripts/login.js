@@ -42,7 +42,7 @@ async function loginUser(data) {
     return
   }
 
-  alert("Login Successful");
+  alert("Login Successful 😊✌");
 
   let name = response.user.name;
 
