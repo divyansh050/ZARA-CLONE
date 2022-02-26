@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <link rel="stylesheet" href="./styles/products.css">
+  </head>
+  <body>
+    <div id="navbar" ></div>
+
+    <div id="main" class="grid">
+      <!-- <div>
+            <img src="https://static.zara.net/photos///2021/I/0/2/p/3562/325/712/2/w/312/3562325712_2_1_1.jpg?ts=1629704227863" alt="">
+
+           <div class="flex">
+               <p>STRIPED COTTON SHIRT</p>
+               <div>
+                   <p style="text-decoration:line-through">₹ 2,990.00</p>
+                   <p>-55%₹ 1,290.00</p>
+               </div>
+           </div>
+        </div> -->
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script type="module">
+
+  import { header } from "./components/header.js";
+  
+  import { footers } from "./components/footer.js";
+  
+  //   navbar from the components import
+  
+  document.getElementById("navbar").innerHTML = header();
+  
+  //   footer from the components import
+  document.getElementById("footer").innerHTML = footers();
+  
+ 
+</script>
+
+<script src="./scripts/products.js"></script>
