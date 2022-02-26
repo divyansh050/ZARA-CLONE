@@ -1,0 +1,64 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu{
+display: flex;
+
+margin-top: 20px;
+
+gap: 100px;
+
+
+margin-left: 250px;
+}
+
+#menu div img{
+width: 40px;
+margin-left: 20px;
+}
+#menu div p{
+font-size: 10px;
+font-weight: bold;
+margin-left: 10px;
+}
+#help{
+margin-top: 180px;
+margin-left: 200px;
+}
+#exchange{
+margin-left: 250px;
+}
+#exchange div img{
+width: 50px;
+}
+#exchange  p{
+font-size: x-small;
+font-weight: bold;
+
+}
+@media only screen and (min-width:375px) and (max-width:768px){
+#menu{
+display: grid;
+grid-template-columns: repeat(3,100px);
+gap: 2px;
+margin-left: 2px;
+
+
+
+
+}
+*{
+margin: 0%;
+}
+
+#menu div img{
+width: 15px;
+margin: 10px;
+
+}
+#menu div p{
+font-size: 5px;
+font-weight: bold;
+
+}
+}
