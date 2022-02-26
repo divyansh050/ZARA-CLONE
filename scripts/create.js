@@ -1,7 +1,7 @@
 let token = JSON.parse(localStorage.getItem("token"));
 
 if (token) {
-  alert("You are already logged in");
+  alert("You are already logged in ✌");
   window.location.href = "./index.html";
 
 }
@@ -44,7 +44,7 @@ async function register(data) {
     return;
   }
 
-  alert("Registered Successfully");
+  alert("Registered Successfully 👍");
 
   window.location.href = "login.html";
 }
