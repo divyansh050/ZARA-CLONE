@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ZARA India | New Collection Online</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            id="slideImg"
+            src="https://static.zara.net/photos///contents/mkt/spots/aw21-sales/subhome-xmedia-launch-man//w/936/IMAGE-large-portrait-513a392e-6ce7-44af-bca7-e8b83a17bf4c-ca_ES@AD_0.jpg?ts=1642192906915"
+          />
+          <p id="sale">S A L E</p>
+          <p id="saleTag">ONLINE AND IN STORES</p>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            id="slideImg"
+            src="https://static.zara.net/photos///contents/mkt/spots/aw21-sales/subhome-xmedia-launch-woman//w/936/IMAGE-large-portrait-ac1f9668-d571-40cd-b8fd-9f5948180cf4-ca_ES@AD_0.jpg?ts=1642192477026"
+          />
+          <p id="sale">S A L E</p>
+          <p id="saleTag">ONLINE AND IN STORES</p>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            id="slideImg"
+            src="https://static.zara.net/photos///contents/mkt/spots/aw21-sales/subhome-xmedia-launch-kids//w/936/IMAGE-large-portrait-fec69357-a451-4502-8063-fd80331ae46e-ca_ES@AD_0.jpg?ts=1642193534887"
+          />
+          <p id="sale">S A L E</p>
+          <p id="saleTag">ONLINE AND IN STORES</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <video id="bookVdo" width="82%" height="675" autoplay muted loop="true">
+        <source
+          src="https://static.zara.net/video///mkt/2021/12/aw21-happy-new-year-subhomes/subhome-xmedia-video-52-2/w/1808//large-landscape/subhome-xmedia-video-52-2_0.mp4?ts=1640882484837"
+          type="video/mp4"
+        />
+      </video>
+      <p id="smallText">INTRODUCING THE FALL/WINTER 2021 COLLECTION</p>
+      <div id="audio-control" class="muted">U</div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script src="./scripts/slide.js"></script>
+
+<script type="module">
+  import { header } from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
+  
+    $(".hamburger").click(function () {
+    $(this).toggleClass("click");
+    $(".sidebar").toggleClass("show");
+  });
+  $(".womensec").click(function () {
+    $("nav ul .womensec1").toggleClass("show");
+  });
+  $(".mensec").click(function () {
+    $("nav ul .mensec1").toggleClass("show1");
+  });
+  $("nav ul li").click(function () {
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+
+</script>
+
+<script src="./scripts/index.js"></script>

@@ -1,0 +1,132 @@
+  body {
+        background-color: black;
+        font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+        color: white;
+      }
+
+      #img {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        margin-top: 150px;
+      }
+
+      #img > div {
+        width: 50%;
+        height: 100%;
+        color: white;
+        font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+      }
+
+      #img > div > h1 {
+        font-size: 65px;
+        color: white;
+      }
+
+      #nav {
+        color: white;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+      }
+
+      #nav > h2 {
+        width: 800px;
+        margin-left: 100px;
+        margin-top:10px;
+        font-size: 35px;
+      }
+
+      #nav > h4 {
+        text-decoration: underline;
+        margin-top: 17px;
+      }
+
+      #nav > p {
+        font-size: 10px;
+        margin-top: 20px;
+      }
+
+      #img > div > h1 {
+        margin: 0;
+      }
+
+      #img > div > h1 > sup {
+        font-size: 40px;
+      }
+
+      .h1 {
+        text-align: center;
+
+        font-size: 65px;
+        margin-top: 100px;
+      }
+
+      h1 > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      * {
+        margin: 0;
+        font-family: Helvetica;
+      }
+      .body_rb {
+        margin-left: 2.5em;
+        margin-top: 5em;
+      }
+      #body_div {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+      }
+      #product_image {
+        width: 93%;
+        margin-bottom: 2em;
+        border-radius: 5px;
+      }
+      #product_image:hover {
+        transform: scale(1.1);
+        transition: 0.75s;
+      }
+      #small_div {
+        display: flex;
+        margin-top: 0.5em;
+        font-weight: bold;
+      }
+      #strike {
+        text-decoration: line-through;
+        padding: 5px;
+        font-weight: bold;
+      }
+      #actual_price {
+        margin-left: 0.5em;
+        background-color: rgb(255, 232, 0);
+        padding: 5px;
+        color: black;
+        font-weight: bold;
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        margin-top: 1em;
+        border: 0;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        margin-bottom: 5em;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: wheat;
+        color: black;
+        transition: background-color 1s;
+        font-weight: bold;
+      }
+
+      a{
+        text-decoration: none;
+        color: white;
+      }
