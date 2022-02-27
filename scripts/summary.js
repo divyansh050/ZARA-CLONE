@@ -1,6 +1,7 @@
 
 let token = JSON.parse(localStorage.getItem("token"));
 let cartItem = JSON.parse(localStorage.getItem("cart"));
+let user;
 
 userToken(token);
 
@@ -17,6 +18,7 @@ async function userToken(token) {
     });
 
    let response = await res.json();
+   user = response
     
     appendUserDetails(response, cartItem);
   }catch(e){
@@ -62,6 +64,44 @@ function appendUserDetails(userData, cartItem) {
 }
 
 document.getElementById("done").addEventListener("click", function () {
-  alert("THANK YOU FOR CHOOSING US");
-  window.location.href = "index.html";
+
+  async function otpVerify(token) {
+    try{
+      let res = await fetch("https://zara-server.herokuapp.com/verify/otp", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        
+      });
+      let response = await res.json();
+      console.log(response);
+
+     let otp = prompt(`Please verify 6 digit OTP sent to your registered email ${user.email}`);
+
+     console.log(response.otp,otp)
+
+     while(otp != response.otp) {
+       alert("Please enter correct OTP");
+       otp = prompt(
+         `Please verify 6 digit OTP sent to your registered email ${user.email}`
+       );
+
+       console.log(otp,response.otp)
+
+     }
+     
+      alert("OTP Verified Successfully 😊✌\nTHANK YOU FOR CHOOSING US");
+    
+       window.location.href = "index.html";
+      // window.location.href = "shipping.html";
+    }catch(e){
+      console.log(e);
+    }
+  }
+
+  otpVerify(token);
+
+ 
 });
